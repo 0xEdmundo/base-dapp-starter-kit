@@ -25,6 +25,71 @@ Follow these steps to set up the project locally.
 
 ### 1. Clone the Repository
 
-```bash
-git clone [https://github.com/0xEdmundo/base-dapp-starter-kit.git](https://github.com/0xEdmundo/base-dapp-starter-kit.git)
-cd base-dapp-starter-kit
+    git clone https://github.com/0xEdmundo/base-dapp-starter-kit.git
+    cd base-dapp-starter-kit
+
+### 2. Install Dependencies
+
+    npm install
+
+### 3. Configure Environment Variables
+
+Create a `.env` file in the root directory and add your private key and API keys.
+
+    cp .env.example .env
+
+**Example .env file:**
+
+    PRIVATE_KEY=your_private_key_here
+    ETHERSCAN_API_KEY=your_basescan_api_key
+    NEXT_PUBLIC_WALLET_CONNECT_ID=your_project_id
+
+### 4. Run the Development Server
+
+    npm run dev
+
+Open http://localhost:3000 with your browser to see the result.
+
+## Smart Contract Deployment
+
+This project comes with a pre-configured Hardhat setup for Base.
+
+### Compile Contracts
+
+    npm run compile
+
+### Deploy to Base Sepolia (Testnet)
+
+    npm run deploy:base-sepolia
+
+### Deploy to Base Mainnet
+
+    npm run deploy:base
+
+## Project Structure
+
+    ├── contracts/       # Solidity smart contracts
+    ├── scripts/         # Deployment scripts
+    ├── src/
+    │   ├── app/         # Next.js pages and components
+    │   ├── components/  # Reusable UI components
+    │   └── utils/       # Helper functions
+    ├── hardhat.config.js
+    └── package.json
+
+## Contributing
+
+Contributions are always welcome! Please create a Pull Request or open an Issue if you find any bugs.
+
+1. Fork the Project
+2. Create your Feature Branch
+3. Commit your Changes
+4. Push to the Branch
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+*Built for the Base Ecosystem.*
