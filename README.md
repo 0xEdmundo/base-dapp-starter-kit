@@ -25,12 +25,14 @@ Follow these steps to set up the project locally.
 
 ### 1. Clone the Repository
 
-    git clone https://github.com/0xEdmundo/base-dapp-starter-kit.git
+    git clone [https://github.com/0xEdmundo/base-dapp-starter-kit.git](https://github.com/0xEdmundo/base-dapp-starter-kit.git)
     cd base-dapp-starter-kit
 
 ### 2. Install Dependencies
 
     npm install
+    # or
+    yarn install
 
 ### 3. Configure Environment Variables
 
@@ -82,9 +84,9 @@ This project comes with a pre-configured Hardhat setup for Base.
 Contributions are always welcome! Please create a Pull Request or open an Issue if you find any bugs.
 
 1. Fork the Project
-2. Create your Feature Branch
-3. Commit your Changes
-4. Push to the Branch
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
 ## License
