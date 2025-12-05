@@ -1,0 +1,38 @@
+{
+  "name": "base-dapp-starter-kit",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "compile": "hardhat compile",
+    "deploy:base": "hardhat run scripts/deploy.js --network base",
+    "deploy:base-sepolia": "hardhat run scripts/deploy.js --network baseSepolia"
+  },
+  "dependencies": {
+    "@rainbow-me/rainbowkit": "^1.0.1",
+    "ethers": "^6.4.0",
+    "next": "13.4.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "viem": "^1.0.0",
+    "wagmi": "^1.0.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.14.0",
+    "dotenv": "^16.0.3"
+  },
+  "keywords": [
+    "base",
+    "base-chain",
+    "smart-contracts",
+    "nextjs",
+    "rainbowkit",
+    "starter-kit",
+    "web3",
+    "dapp"
+  ]
+}
