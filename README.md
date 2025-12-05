@@ -25,30 +25,40 @@ Follow these steps to set up the project locally.
 
 ### 1. Clone the Repository
 
-    git clone [https://github.com/0xEdmundo/base-dapp-starter-kit.git](https://github.com/0xEdmundo/base-dapp-starter-kit.git)
-    cd base-dapp-starter-kit
+```bash
+git clone https://github.com/0xEdmundo/base-dapp-starter-kit.git
+cd base-dapp-starter-kit
+```
 
 ### 2. Install Dependencies
 
-    npm install
-    # or
-    yarn install
+```bash
+npm install
+# or
+yarn install
+```
 
 ### 3. Configure Environment Variables
 
 Create a `.env` file in the root directory and add your private key and API keys.
 
-    cp .env.example .env
+```bash
+cp .env.example .env
+```
 
 **Example .env file:**
 
-    PRIVATE_KEY=your_private_key_here
-    ETHERSCAN_API_KEY=your_basescan_api_key
-    NEXT_PUBLIC_WALLET_CONNECT_ID=your_project_id
+```env
+PRIVATE_KEY=your_private_key_here
+ETHERSCAN_API_KEY=your_basescan_api_key
+NEXT_PUBLIC_WALLET_CONNECT_ID=your_project_id
+```
 
 ### 4. Run the Development Server
 
-    npm run dev
+```bash
+npm run dev
+```
 
 Open http://localhost:3000 with your browser to see the result.
 
@@ -58,26 +68,34 @@ This project comes with a pre-configured Hardhat setup for Base.
 
 ### Compile Contracts
 
-    npm run compile
+```bash
+npm run compile
+```
 
 ### Deploy to Base Sepolia (Testnet)
 
-    npm run deploy:base-sepolia
+```bash
+npm run deploy:base-sepolia
+```
 
 ### Deploy to Base Mainnet
 
-    npm run deploy:base
+```bash
+npm run deploy:base
+```
 
 ## Project Structure
 
-    ├── contracts/       # Solidity smart contracts
-    ├── scripts/         # Deployment scripts
-    ├── src/
-    │   ├── app/         # Next.js pages and components
-    │   ├── components/  # Reusable UI components
-    │   └── utils/       # Helper functions
-    ├── hardhat.config.js
-    └── package.json
+```text
+├── contracts/       # Solidity smart contracts
+├── scripts/         # Deployment scripts
+├── src/
+│   ├── app/         # Next.js pages and components
+│   ├── components/  # Reusable UI components
+│   └── utils/       # Helper functions
+├── hardhat.config.js
+└── package.json
+```
 
 ## Contributing
 
